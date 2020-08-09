@@ -1,0 +1,116 @@
+//*BURGER*//
+.burger-wrap {
+	visibility: hidden;
+	@media (max-width: 768px){
+        width: 100%;
+        display: inline-block;
+        visibility: visible;
+    }
+    @media (min-width: 860px){
+        display: none;
+    }
+}
+
+.header-column__contacts {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.header-column {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	@media (max-width: 1023px){
+        width: 100%;
+		visibility: hidden;
+	}
+	.burger-active & {
+		@media (max-width: 1023px){
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+	&__logo {
+		width: 240px;
+		max-width: 100%;
+	}
+	&__navigation {
+		width: 600px;
+		max-width: 100%;
+	}
+	&__contacts {
+		width: 320px;
+		max-width: 100%;
+	}
+}
+
+.burger-wrap {
+    align-items: center;
+    display: inline-flex;
+    width: 100px;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	@media (max-width: 1023px){
+        width: 100%;
+        display: inline-block;
+		visibility: visible;
+	}
+	@media (max-width: 1023px){
+        width: 100%;
+        text-align: right;
+	}
+}
+
+
+.burger {
+	display: inline-block;
+	$width: 50px;
+	$thickness: 2px;
+	border: 0;
+	background: none;
+	outline: 0;
+	color: black;
+	padding: 0;
+	cursor: pointer;
+	border-bottom: $thickness solid currentColor;
+	width: $width;
+	transition: border-bottom 1s ease-in-out;
+	&:-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+	&:before {
+		content: "";
+		display: block;
+		border-bottom: $thickness solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+	}
+	&:after {
+		content: "";
+		display: block;
+		border-bottom: $thickness solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	}
+	&.open {
+		border-bottom: $thickness solid transparent;
+		transition: border-bottom 0.8s ease-in-out;
+		&:before {
+			transform: rotate(-405deg) translateY(1px) translateX(-3px);
+			transition: transform 0.5s ease-in-out;
+		}
+
+		&:after {
+			transform: rotate(405deg) translateY(-4px) translateX(-5px);
+			transition: transform 0.5s ease-in-out;
+		}
+	}
+}
+//*******************//

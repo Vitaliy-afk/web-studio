@@ -1,0 +1,39 @@
+.icon {
+	margin-top: 16px;
+}
+.network {
+	display: flex;
+	padding: 0 32px;
+	justify-content: center;
+	@media screen and (min-width: 1200px) {
+		justify-content: space-between;
+	}
+
+	&.link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+
+		&:hover,
+		&:focus {
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			background-color: $accent-color;
+			outline: none;
+			transition: $transition-timing-function;
+		}
+
+		&:hover svg,
+		&:focus svg {
+			fill: $bg-color;
+			transition: $transition-timing-function;
+		}
+	}
+}
+.link-icon {
+	fill: #afb1b8;
+}

@@ -1,0 +1,39 @@
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 50px;
+
+    & .item:not(:first-child) {
+    margin-left: 8px;
+  }
+}
+.button-portfolio  {
+  padding: 6px 22px;
+  width: auto;
+  height: 38px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+  align-items: center;
+
+  border-radius: 4px;
+  border: transparent;
+  outline: none;
+  background-color: $secondary-background-color;
+
+    &:hover {
+      color: $secondary-background-color;
+      background-color: $accent-color;
+      box-shadow:  0px 2px 2px rgba(0, 0, 0, 0.12),
+      0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+      transition: $transition-timing-function;
+    } 
+}
+  

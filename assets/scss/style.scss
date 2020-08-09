@@ -1,0 +1,55 @@
+@import "./utils/variables";
+@import "./utils/body-components";
+@import "./components/container";
+@import "./components/section";
+@import "./components/header/header-logo";
+@import "./components/header/header-navigate";
+@import "./components/header/header-contacts";
+@import "./components/header/menu";
+@import "./components/web-studio-main/hero";
+@import "./components/web-studio-main/advantages";
+@import "./components/web-studio-main/features";
+@import "./components/web-studio-main/profily";
+@import "./components/web-studio-main/command";
+@import "./components/web-studio-main/icon";
+@import "./components/web-studio-main/clients";
+@import "./components/button";
+@import "./components/footer/page-footer";
+@import "./components/footer/footer-logo";
+@import "./components/footer/footer-contacts";
+@import "./components/footer/footer-icon";
+@import "./components/footer/footer-form";
+@import "./components/footer/footer-button";
+@import "./components/modal";
+@import "./components/form";
+@import "./components/portfolio-main/portfolio-button";
+@import "./components/portfolio-main/portfolio";
+@import "./utils/breakpoints";
+@import "./components/header/burger";
+@import "./utils/include-media";
+@import "./utils/normalize";
+@import "./utils/mixins";
+@import "./utils/forms";
+@import "./utils/functions";
+@import "./utils/helpers";
+
+
+$breakpoints: (
+	'xs-phone': 320px,
+	'phone': 480px,
+	'tablet': 768px,
+	'desktop': 1024px,
+	'widescreen': 1280px
+);
+
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+

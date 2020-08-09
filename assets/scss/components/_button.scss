@@ -1,0 +1,30 @@
+.button-hero,
+.button-footer,
+.form-button {
+	border-radius: 4px ;
+	padding: 10px 32px;
+	width: 200px;
+	height: 50px;
+	color: $bg-color;
+	background-color: $accent-color;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.8;
+	display: inline-block;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+	border: transparent;
+	outline: none;
+	transition: .5s;
+}
+
+.button-hero:hover {
+	background-color: blue;
+}
+
+
+.button-footer:hover {
+	background-color: blue;
+}

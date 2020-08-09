@@ -1,0 +1,34 @@
+.site-contacts {
+	display: flex;
+	li:not(:last-child){
+		padding-right: 5px;
+	}
+	.site-contacts__item {
+		text-align: center;
+	}
+	.contact__item__link {
+		display: flex;
+		color: $primary-text-color;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			color: $accent-color;
+			outline: none;
+			transition: $transition-timing-function;
+		}
+	}
+}
+
+.site-contacts-icon {
+	margin-right: 10px;
+	fill: currentColor;
+	vertical-align: middle;
+
+	&:hover {
+		fill: $accent-color;
+		transition: $transition-timing-function;
+	}
+}

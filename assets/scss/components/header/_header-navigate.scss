@@ -1,0 +1,39 @@
+.site-nav {
+	display: flex;
+	.item:not(:last-child) {
+		margin-right: 50px;
+
+	}
+
+	.link {
+		position: relative;
+		display: inline-block;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		color: $title-text-color;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			color: $accent-color;
+			outline: none;
+			transition: $transition-timing-function;
+		}
+		&.current {
+			color: $accent-color;
+		}
+		&.current::after {
+			position: absolute;
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 4px;
+			width: 100%;
+			border-radius: 2px;
+			background-color: $accent-color;
+		}
+	}
+}
+
